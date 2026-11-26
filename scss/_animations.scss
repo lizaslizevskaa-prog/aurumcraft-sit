@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+// Плавное вращение шестерёнки калибра
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Мягкое золотое дыхание вокруг главного циферблата
+@keyframes auraPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+.hero-clock__gear {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spinSlow 24s linear infinite;
+}
+
+.hero-clock__aura {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: auraPulse 5s ease-in-out infinite;
+}

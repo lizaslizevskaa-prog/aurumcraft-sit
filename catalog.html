@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог продукции — AurumCraft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo" aria-label="AurumCraft — На главную">
+          <span class="logo__emblem">
+            <svg
+              class="js-clock"
+              data-center="32 34"
+              viewBox="0 0 64 64"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <clipPath id="dialClip">
+                  <circle cx="32" cy="34" r="21.5" />
+                </clipPath>
+                <linearGradient
+                  id="dialShineGrad"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#E2C27D" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#FFF4CC" stop-opacity="0.72" />
+                  <stop offset="100%" stop-color="#E2C27D" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                class="svg-bezel"
+                d="M23 14.1 L24.5 9.5 L26.2 9.5 L25.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 14.1 L39.5 9.5 L37.8 9.5 L38.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M23 53.9 L24.5 58.5 L26.2 58.5 L25.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 53.9 L39.5 58.5 L37.8 58.5 L38.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <polygon
+                class="svg-bezel"
+                points="29.5,6.8 34.5,6.8 35.4,9.2 28.6,9.2"
+                stroke="#B89550"
+                stroke-width="1"
+                fill="#FBF9F6"
+                stroke-linejoin="round"
+              />
+              <line
+                class="svg-bezel"
+                x1="32"
+                y1="9.2"
+                x2="32"
+                y2="12"
+                stroke="#B89550"
+                stroke-width="1"
+              />
+              <circle
+                class="svg-bezel"
+                cx="32"
+                cy="34"
+                r="22"
+                fill="#FBF9F6"
+                stroke="#B89550"
+                stroke-width="1.2"
+              />
+              <circle
+                cx="32"
+                cy="34"
+                r="19.5"
+                stroke="#B89550"
+                stroke-width="0.5"
+                opacity="0.7"
+              />
+              <line
+                x1="32"
+                y1="15"
+                x2="32"
+                y2="18.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="51"
+                y1="34"
+                x2="47.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="32"
+                y1="53"
+                x2="32"
+                y2="49.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="13"
+                y1="34"
+                x2="16.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <circle cx="40.5" cy="19.3" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="40.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="19.3" r="0.65" fill="#B89550" />
+              <rect
+                class="svg-dial-shine"
+                x="0"
+                y="10"
+                width="28"
+                height="48"
+                fill="url(#dialShineGrad)"
+                clip-path="url(#dialClip)"
+              />
+              <path
+                class="svg-hand-hour js-hand-hour"
+                d="M32 34 L30.7 27.5 L32 21.5 L33.3 27.5 Z"
+                fill="#5E1D29"
+              />
+              <path
+                class="svg-hand-minute js-hand-minute"
+                d="M32 34 L31.0 24.5 L32 15.5 L33.0 24.5 Z"
+                fill="#5E1D29"
+              />
+              <line
+                class="svg-hand-second js-hand-second"
+                x1="32"
+                y1="39"
+                x2="32"
+                y2="14.5"
+                stroke="#B89550"
+                stroke-width="0.95"
+                stroke-linecap="round"
+              />
+              <circle cx="32" cy="34" r="1.7" fill="#B89550" />
+              <circle cx="32" cy="34" r="0.65" fill="#5E1D29" />
+            </svg>
+          </span>
+          <span class="logo__name">AurumCraft</span>
+        </a>
+
+        <nav class="nav" id="mainNav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li>
+              <a href="catalog.html" class="nav__link nav__link--active"
+                >Каталог</a
+              >
+            </li>
+            <li>
+              <a href="production.html" class="nav__link">Производство</a>
+            </li>
+            <li>
+              <a href="corporate.html" class="nav__link"
+                >Корпоративным клиентам</a
+              >
+            </li>
+            <li>
+              <a href="contacts.html" class="nav__link">О заводе и контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a
+            href="catalog.html#favorites"
+            class="fav-badge"
+            title="Избранные модели"
+          >
+            <span>Избранное</span>
+            <span class="fav-badge__count" id="favCount">0</span>
+          </a>
+          <button
+            class="burger"
+            id="burgerBtn"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container" data-aos="fade-up">
+          <span class="page-hero__eyebrow">Номенклатура ОАО «АурумКрафт»</span>
+          <h1 class="page-hero__title">
+            Каталог часовой и ювелирной продукции
+          </h1>
+          <p class="page-hero__desc">
+            Серийные модели часов и ювелирные изделия с паспортизацией
+            характеристик и выбором по сплавам и механизмам.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- Панель фильтров -->
+          <div class="catalog-controls" data-aos="fade-up">
+            <div class="catalog-controls__top">
+              <div
+                class="filter-tabs"
+                role="tablist"
+                aria-label="Категории продукции"
+              >
+                <button
+                  class="filter-tab is-active"
+                  type="button"
+                  data-category="all"
+                >
+                  Все изделия
+                </button>
+                <button
+                  class="filter-tab"
+                  type="button"
+                  data-category="watches"
+                >
+                  Наручные часы
+                </button>
+                <button
+                  class="filter-tab"
+                  type="button"
+                  data-category="jewelry"
+                >
+                  Ювелирные изделия
+                </button>
+                <button
+                  class="filter-tab"
+                  type="button"
+                  data-category="favorites"
+                >
+                  ★ Избранное
+                </button>
+              </div>
+            </div>
+
+            <div class="catalog-controls__bottom">
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Поиск по названию или артикулу (например, AK-1981)..."
+                aria-label="Поиск по каталогу"
+              />
+
+              <select
+                id="mechanismFilter"
+                class="form-control"
+                aria-label="Фильтр по типу механизма"
+              >
+                <option value="all">Все типы механизмов</option>
+                <option value="Механика">Механика</option>
+                <option value="Автоподзавод">Автоподзавод</option>
+                <option value="Кварц">Кварц</option>
+                <option value="Без механизма">Ювелирные изделия</option>
+              </select>
+
+              <select
+                id="materialFilter"
+                class="form-control"
+                aria-label="Фильтр по сплаву"
+              >
+                <option value="all">Все материалы</option>
+                <option value="Золото 585">Золото 585</option>
+                <option value="Золото 750">Золото 750</option>
+                <option value="Сталь 316L">Сталь 316L</option>
+                <option value="Титан">Титан</option>
+                <option value="Серебро 925">Серебро 925</option>
+              </select>
+
+              <button
+                type="button"
+                id="resetFiltersBtn"
+                class="btn btn--outline"
+                style="padding: 11px 18px"
+              >
+                Сбросить
+              </button>
+            </div>
+
+            <div class="catalog-controls__meta">
+              <span id="resultsCount">Загрузка каталога...</span>
+            </div>
+          </div>
+
+          <!-- Сетка карточек (заполняется через JS DOM) -->
+          <div class="catalog-grid" id="catalogGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Модальное окно с паспортом модели -->
+    <div
+      class="modal"
+      id="productModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal__backdrop" id="modalBackdrop"></div>
+      <div class="modal__dialog">
+        <button
+          class="modal__close"
+          id="modalCloseBtn"
+          type="button"
+          aria-label="Закрыть окно"
+        >
+          ×
+        </button>
+        <div class="modal__grid">
+          <div class="modal__preview" id="modalPreview"></div>
+          <div>
+            <span class="modal__article" id="modalArticle"></span>
+            <h2 class="modal__title" id="modalTitle"></h2>
+            <p class="modal__desc" id="modalDesc"></p>
+            <table class="modal__specs" id="modalSpecs"></table>
+            <div class="modal__footer">
+              <span class="modal__price" id="modalPrice"></span>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap">
+                <button
+                  class="btn btn--outline"
+                  id="modalFavBtn"
+                  type="button"
+                  style="padding: 10px 16px"
+                >
+                  ☆ В избранное
+                </button>
+                <a
+                  href="contacts.html"
+                  class="btn btn--wine"
+                  style="padding: 10px 18px"
+                  >Оформить заявку</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <div class="footer__brand">AurumCraft</div>
+            <p class="footer__desc">
+              ОАО «АурумКрафт» — промышленное ювелирно-часовое предприятие
+              полного цикла. Точность механизмов и благородство драгоценных
+              сплавов.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Разделы</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог продукции</a></li>
+              <li><a href="production.html">Производство и технологии</a></li>
+              <li><a href="corporate.html">Корпоративным клиентам</a></li>
+              <li><a href="contacts.html">О заводе и контакты</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Контакты завода</h3>
+            <ul class="footer__links">
+              <li>г. Минск, ул. Приборостроительная, 18</li>
+              <li>Отдел сбыта: +375 (17) 200-45-80</li>
+              <li>E-mail: info@aurumcraft.by</li>
+              <li>Пн–Пт: 08:30 – 17:30</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© 2026 ОАО «АурумКрафт». Все права защищены.</span>
+          <span>Курсовой проект · Клиентская часть веб-ресурса</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+  </body>
+</html>

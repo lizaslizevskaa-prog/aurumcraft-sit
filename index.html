@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AurumCraft — Ювелирно-часовой завод</title>
+
+    <!-- Шрифты: Pinyon Script, Cormorant Garamond, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Библиотеки AOS и Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Свои скомпилированные стили -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo" aria-label="AurumCraft — На главную">
+          <span class="logo__emblem">
+            <svg
+              class="js-clock"
+              data-center="32 34"
+              viewBox="0 0 64 64"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <clipPath id="dialClip">
+                  <circle cx="32" cy="34" r="21.5" />
+                </clipPath>
+                <linearGradient
+                  id="dialShineGrad"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#E2C27D" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#FFF4CC" stop-opacity="0.72" />
+                  <stop offset="100%" stop-color="#E2C27D" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                class="svg-bezel"
+                d="M23 14.1 L24.5 9.5 L26.2 9.5 L25.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 14.1 L39.5 9.5 L37.8 9.5 L38.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M23 53.9 L24.5 58.5 L26.2 58.5 L25.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 53.9 L39.5 58.5 L37.8 58.5 L38.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <polygon
+                class="svg-bezel"
+                points="29.5,6.8 34.5,6.8 35.4,9.2 28.6,9.2"
+                stroke="#B89550"
+                stroke-width="1"
+                fill="#FBF9F6"
+                stroke-linejoin="round"
+              />
+              <line
+                class="svg-bezel"
+                x1="32"
+                y1="9.2"
+                x2="32"
+                y2="12"
+                stroke="#B89550"
+                stroke-width="1"
+              />
+              <circle
+                class="svg-bezel"
+                cx="32"
+                cy="34"
+                r="22"
+                fill="#FBF9F6"
+                stroke="#B89550"
+                stroke-width="1.2"
+              />
+              <circle
+                cx="32"
+                cy="34"
+                r="19.5"
+                stroke="#B89550"
+                stroke-width="0.5"
+                opacity="0.7"
+              />
+              <line
+                x1="32"
+                y1="15"
+                x2="32"
+                y2="18.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="51"
+                y1="34"
+                x2="47.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="32"
+                y1="53"
+                x2="32"
+                y2="49.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="13"
+                y1="34"
+                x2="16.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <circle cx="40.5" cy="19.3" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="40.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="19.3" r="0.65" fill="#B89550" />
+              <rect
+                class="svg-dial-shine"
+                x="0"
+                y="10"
+                width="28"
+                height="48"
+                fill="url(#dialShineGrad)"
+                clip-path="url(#dialClip)"
+              />
+              <path
+                class="svg-hand-hour js-hand-hour"
+                d="M32 34 L30.7 27.5 L32 21.5 L33.3 27.5 Z"
+                fill="#5E1D29"
+              />
+              <path
+                class="svg-hand-minute js-hand-minute"
+                d="M32 34 L31.0 24.5 L32 15.5 L33.0 24.5 Z"
+                fill="#5E1D29"
+              />
+              <line
+                class="svg-hand-second js-hand-second"
+                x1="32"
+                y1="39"
+                x2="32"
+                y2="14.5"
+                stroke="#B89550"
+                stroke-width="0.95"
+                stroke-linecap="round"
+              />
+              <circle cx="32" cy="34" r="1.7" fill="#B89550" />
+              <circle cx="32" cy="34" r="0.65" fill="#5E1D29" />
+            </svg>
+          </span>
+          <span class="logo__name">AurumCraft</span>
+        </a>
+
+        <nav class="nav" id="mainNav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link nav__link--active"
+                >Главная</a
+              >
+            </li>
+            <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+            <li>
+              <a href="production.html" class="nav__link">Производство</a>
+            </li>
+            <li>
+              <a href="corporate.html" class="nav__link"
+                >Корпоративным клиентам</a
+              >
+            </li>
+            <li>
+              <a href="contacts.html" class="nav__link">О заводе и контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a
+            href="catalog.html#favorites"
+            class="fav-badge"
+            title="Избранные модели"
+          >
+            <span>Избранное</span>
+            <span class="fav-badge__count" id="favCount">0</span>
+          </a>
+          <button
+            class="burger"
+            id="burgerBtn"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Главный экран с огромным живым SVG-циферблатом -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div data-aos="fade-right">
+            <span class="hero__eyebrow"
+              >ОАО «АурумКрафт» · Мануфактура полного цикла</span
+            >
+            <h1 class="hero__title">
+              Искусство <span>драгоценного</span> времени
+            </h1>
+            <p class="hero__subtitle">
+              Промышленное производство механических и кварцевых часов,
+              титановых и золотых корпусов, а также серийных ювелирных изделий с
+              точностью до микрона.
+            </p>
+            <div class="hero__actions">
+              <a href="catalog.html" class="btn btn--wine">Перейти в каталог</a>
+              <a href="production.html" class="btn btn--outline"
+                >О производстве</a
+              >
+            </div>
+          </div>
+
+          <!-- Огромный живой акцентный циферблат -->
+          <div class="hero__visual" data-aos="zoom-in" data-aos-delay="150">
+            <div class="hero-clock" title="Наведите курсор для золотого сияния">
+              <svg
+                class="hero-clock__svg js-clock"
+                data-center="200 200"
+                viewBox="0 0 400 400"
+                fill="none"
+                aria-label="Живой циферблат часов AurumCraft"
+              >
+                <defs>
+                  <clipPath id="heroDialClip">
+                    <circle cx="200" cy="200" r="142" />
+                  </clipPath>
+                  <linearGradient
+                    id="heroBezelGrad"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#E2C27D" />
+                    <stop offset="50%" stop-color="#9A7838" />
+                    <stop offset="100%" stop-color="#E2C27D" />
+                  </linearGradient>
+                  <radialGradient id="heroFaceGrad" cx="50%" cy="45%" r="55%">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="100%" stop-color="#F2ECE6" />
+                  </radialGradient>
+                  <linearGradient
+                    id="heroShineGrad"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stop-color="#E2C27D" stop-opacity="0" />
+                    <stop
+                      offset="50%"
+                      stop-color="#FFF7DC"
+                      stop-opacity="0.65"
+                    />
+                    <stop offset="100%" stop-color="#E2C27D" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+
+                <circle
+                  class="hero-clock__aura"
+                  cx="200"
+                  cy="200"
+                  r="184"
+                  stroke="#B89550"
+                  stroke-width="0.8"
+                  stroke-dasharray="4 6"
+                  opacity="0.5"
+                />
+
+                <path
+                  d="M148 48 L158 14 L174 14 L168 42"
+                  stroke="url(#heroBezelGrad)"
+                  stroke-width="2.5"
+                  fill="#F2ECE6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M252 48 L242 14 L226 14 L232 42"
+                  stroke="url(#heroBezelGrad)"
+                  stroke-width="2.5"
+                  fill="#F2ECE6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M148 352 L158 386 L174 386 L168 358"
+                  stroke="url(#heroBezelGrad)"
+                  stroke-width="2.5"
+                  fill="#F2ECE6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M252 352 L242 386 L226 386 L232 358"
+                  stroke="url(#heroBezelGrad)"
+                  stroke-width="2.5"
+                  fill="#F2ECE6"
+                  stroke-linejoin="round"
+                />
+
+                <rect
+                  x="358"
+                  y="182"
+                  width="16"
+                  height="36"
+                  rx="4"
+                  fill="url(#heroBezelGrad)"
+                  stroke="#5E1D29"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="364"
+                  y1="188"
+                  x2="371"
+                  y2="188"
+                  stroke="#5E1D29"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="364"
+                  y1="200"
+                  x2="371"
+                  y2="200"
+                  stroke="#5E1D29"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="364"
+                  y1="212"
+                  x2="371"
+                  y2="212"
+                  stroke="#5E1D29"
+                  stroke-width="1.2"
+                />
+
+                <circle
+                  class="hero-bezel-accent"
+                  cx="200"
+                  cy="200"
+                  r="162"
+                  fill="url(#heroBezelGrad)"
+                  stroke="#8C6A2E"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="153"
+                  fill="#5E1D29"
+                  stroke="#E2C27D"
+                  stroke-width="1"
+                />
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="142"
+                  fill="url(#heroFaceGrad)"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="134"
+                  stroke="#B89550"
+                  stroke-width="0.6"
+                  opacity="0.6"
+                />
+
+                <text
+                  x="200"
+                  y="90"
+                  text-anchor="middle"
+                  font-family="Cormorant Garamond, serif"
+                  font-size="22"
+                  font-weight="700"
+                  fill="#5E1D29"
+                >
+                  XII
+                </text>
+                <text
+                  x="320"
+                  y="207"
+                  text-anchor="middle"
+                  font-family="Cormorant Garamond, serif"
+                  font-size="22"
+                  font-weight="700"
+                  fill="#5E1D29"
+                >
+                  III
+                </text>
+                <text
+                  x="200"
+                  y="330"
+                  text-anchor="middle"
+                  font-family="Cormorant Garamond, serif"
+                  font-size="22"
+                  font-weight="700"
+                  fill="#5E1D29"
+                >
+                  VI
+                </text>
+                <text
+                  x="80"
+                  y="207"
+                  text-anchor="middle"
+                  font-family="Cormorant Garamond, serif"
+                  font-size="22"
+                  font-weight="700"
+                  fill="#5E1D29"
+                >
+                  IX
+                </text>
+
+                <line
+                  x1="260"
+                  y1="96"
+                  x2="266"
+                  y2="86"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="304"
+                  y1="140"
+                  x2="314"
+                  y2="134"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="304"
+                  y1="260"
+                  x2="314"
+                  y2="266"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="260"
+                  y1="304"
+                  x2="266"
+                  y2="314"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="140"
+                  y1="304"
+                  x2="134"
+                  y2="314"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="96"
+                  y1="260"
+                  x2="86"
+                  y2="266"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="96"
+                  y1="140"
+                  x2="86"
+                  y2="134"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="140"
+                  y1="96"
+                  x2="134"
+                  y2="86"
+                  stroke="#B89550"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+
+                <text
+                  class="hero-brand-svg"
+                  x="200"
+                  y="144"
+                  text-anchor="middle"
+                  font-family="Pinyon Script, cursive"
+                  font-size="38"
+                  fill="#5E1D29"
+                >
+                  AurumCraft
+                </text>
+                <text
+                  x="200"
+                  y="160"
+                  text-anchor="middle"
+                  font-family="Montserrat, sans-serif"
+                  font-size="8.5"
+                  letter-spacing="3.5"
+                  fill="#B89550"
+                  font-weight="600"
+                >
+                  МАНУФАКТУРА · 1981
+                </text>
+
+                <circle
+                  cx="200"
+                  cy="264"
+                  r="30"
+                  fill="#FBF9F6"
+                  stroke="#B89550"
+                  stroke-width="1.2"
+                />
+                <g class="hero-clock__gear">
+                  <circle
+                    cx="200"
+                    cy="264"
+                    r="22"
+                    stroke="#B89550"
+                    stroke-width="2"
+                    stroke-dasharray="4 3"
+                  />
+                  <circle
+                    cx="200"
+                    cy="264"
+                    r="14"
+                    stroke="#5E1D29"
+                    stroke-width="1"
+                  />
+                  <line
+                    x1="200"
+                    y1="242"
+                    x2="200"
+                    y2="286"
+                    stroke="#B89550"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    x1="178"
+                    y1="264"
+                    x2="222"
+                    y2="264"
+                    stroke="#B89550"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="200" cy="264" r="4" fill="#5E1D29" />
+                </g>
+
+                <rect
+                  class="hero-dial-shine"
+                  x="0"
+                  y="50"
+                  width="160"
+                  height="300"
+                  fill="url(#heroShineGrad)"
+                  clip-path="url(#heroDialClip)"
+                />
+
+                <path
+                  class="hero-hand-hour js-hand-hour"
+                  d="M200 208 L194 165 L200 112 L206 165 Z"
+                  fill="#5E1D29"
+                />
+                <path
+                  class="hero-hand-minute js-hand-minute"
+                  d="M200 212 L195.5 148 L200 78 L204.5 148 Z"
+                  fill="#5E1D29"
+                />
+                <line
+                  class="hero-hand-second js-hand-second"
+                  x1="200"
+                  y1="234"
+                  x2="200"
+                  y2="68"
+                  stroke="#B89550"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+
+                <circle cx="200" cy="200" r="8" fill="#B89550" />
+                <circle cx="200" cy="200" r="3.5" fill="#5E1D29" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Ключевые показатели завода -->
+      <section class="stats">
+        <div class="container stats__grid">
+          <div data-aos="fade-up">
+            <div class="stats__num js-counter" data-target="45" data-suffix="+">
+              0
+            </div>
+            <div class="stats__label">Лет часового производства</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <div class="stats__num js-counter" data-target="242">0</div>
+            <div class="stats__label">Детали в собственном калибре</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <div class="stats__num js-counter" data-target="92" data-suffix="%">
+              0
+            </div>
+            <div class="stats__label">Комплектующих собственного цеха</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300">
+            <div class="stats__num js-counter" data-target="12">0</div>
+            <div class="stats__label">Суток стендового контроля точности</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Направления деятельности предприятия -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Компетенции завода</span>
+            <h2 class="section-header__title">
+              Три грани ювелирно-часового мастерства
+            </h2>
+            <p class="section-header__desc">
+              ОАО «АурумКрафт» объединяет точное приборостроение и традиционную
+              обработку благородных металлов.
+            </p>
+          </div>
+
+          <div class="directions__grid">
+            <article class="dir-card" data-aos="fade-up" data-aos-delay="50">
+              <svg
+                class="dir-card__icon"
+                viewBox="0 0 52 52"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="14"
+                  stroke="#5E1D29"
+                  stroke-width="1"
+                  stroke-dasharray="2 2"
+                />
+                <path
+                  d="M26 26 L20 18 M26 26 L34 22"
+                  stroke="#5E1D29"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h3 class="dir-card__title">Серийные наручные часы</h3>
+              <p class="dir-card__text">
+                Механические калибры с автоподзаводом и высокоточные кварцевые
+                модели с сапфировым стеклом и водозащитой до 10 ATM.
+              </p>
+              <a href="catalog.html#watches" class="dir-card__link"
+                >Смотреть каталог →</a
+              >
+            </article>
+
+            <article class="dir-card" data-aos="fade-up" data-aos-delay="150">
+              <svg
+                class="dir-card__icon"
+                viewBox="0 0 52 52"
+                fill="none"
+                aria-hidden="true"
+              >
+                <polygon
+                  points="26,6 44,20 26,46 8,20"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                  fill="rgba(184,149,80,0.1)"
+                />
+                <line
+                  x1="8"
+                  y1="20"
+                  x2="44"
+                  y2="20"
+                  stroke="#5E1D29"
+                  stroke-width="1.2"
+                />
+                <polyline
+                  points="17,20 26,46 35,20"
+                  stroke="#5E1D29"
+                  stroke-width="1.1"
+                />
+              </svg>
+              <h3 class="dir-card__title">Ювелирные коллекции</h3>
+              <p class="dir-card__text">
+                Серийные изделия из золота 585 и 750 пробы, а также
+                стерлингового серебра с природными и синтезированными вставками.
+              </p>
+              <a href="catalog.html#jewelry" class="dir-card__link"
+                >Открыть изделия →</a
+              >
+            </article>
+
+            <article class="dir-card" data-aos="fade-up" data-aos-delay="250">
+              <svg
+                class="dir-card__icon"
+                viewBox="0 0 52 52"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="8"
+                  y="14"
+                  width="36"
+                  height="26"
+                  rx="4"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M16 24 L26 30 L36 24"
+                  stroke="#5E1D29"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <circle cx="26" cy="20" r="3" fill="#B89550" />
+              </svg>
+              <h3 class="dir-card__title">Корпоративные серии</h3>
+              <p class="dir-card__text">
+                Изготовление памятных и наградных партий часов с тампопечатью
+                логотипа, лазерной гравировкой и чеканкой гербов.
+              </p>
+              <a href="corporate.html" class="dir-card__link"
+                >Рассчитать тираж →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Флагманские коллекции (слайдер Swiper.js с единой высотой карточек) -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Избранные линии</span>
+            <h2 class="section-header__title">Флагманские коллекции завода</h2>
+          </div>
+
+          <div
+            class="swiper collections-swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="slide-card">
+                  <div class="slide-card__preview">
+                    <img
+                      src="https://images.unsplash.com/photo-1580226223521-5412ec88237a?w=900"
+                      alt="Aurum Classic 1981"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span class="slide-card__tag">Механика · Калибр AK-2416</span>
+                  <h3 class="slide-card__title">Aurum Classic 1981</h3>
+                  <p class="slide-card__spec">Золото 585 · Сапфир · 40 мм</p>
+                  <a href="catalog.html#watches" class="btn btn--outline"
+                    >Подробнее в каталоге</a
+                  >
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="slide-card">
+                  <div class="slide-card__preview">
+                    <img
+                      src="https://images.unsplash.com/photo-1639564879163-a2a85682410e?w=900"
+                      alt="Velvet Manufacture"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span class="slide-card__tag"
+                    >Автоподзавод · Мануфактура</span
+                  >
+                  <h3 class="slide-card__title">Velvet Manufacture</h3>
+                  <p class="slide-card__spec">Сталь 316L · Сапфир · 42 мм</p>
+                  <a href="catalog.html#watches" class="btn btn--outline"
+                    >Подробнее в каталоге</a
+                  >
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="slide-card">
+                  <div class="slide-card__preview">
+                    <img
+                      src="https://images.unsplash.com/photo-1786052348000-58d9171b9eee?w=900"
+                      alt="Perle d'Or"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span class="slide-card__tag">Женская ювелирная серия</span>
+                  <h3 class="slide-card__title">Perle d'Or</h3>
+                  <p class="slide-card__spec">Титан и PVD · Сапфир · 34 мм</p>
+                  <a href="catalog.html#watches" class="btn btn--outline"
+                    >Подробнее в каталоге</a
+                  >
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="slide-card">
+                  <div class="slide-card__preview">
+                    <img
+                      src="https://images.unsplash.com/photo-1783061339627-37483d51349c?w=900"
+                      alt="Кольцо Грань Наследия"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span class="slide-card__tag">Ювелирное направление</span>
+                  <h3 class="slide-card__title">Грань Наследия</h3>
+                  <p class="slide-card__spec">Золото 585 · Алмазная грань</p>
+                  <a href="catalog.html#jewelry" class="btn btn--outline"
+                    >Подробнее в каталоге</a
+                  >
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Приглашение к корпоративному сотрудничеству -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner" data-aos="zoom-in">
+            <div>
+              <h2 class="cta-banner__title">
+                Корпоративные и наградные тиражи
+              </h2>
+              <p class="cta-banner__text">
+                Выпуск лимитированных серий от 20 экземпляров с нанесением
+                фирменной символики предприятия и расчётом стоимости прямо на
+                сайте.
+              </p>
+            </div>
+            <a href="corporate.html" class="btn btn--gold">Рассчитать партию</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <div class="footer__brand">AurumCraft</div>
+            <p class="footer__desc">
+              ОАО «АурумКрафт» — промышленное ювелирно-часовое предприятие
+              полного цикла. Точность механизмов и благородство драгоценных
+              сплавов.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Разделы</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог продукции</a></li>
+              <li><a href="production.html">Производство и технологии</a></li>
+              <li><a href="corporate.html">Корпоративным клиентам</a></li>
+              <li><a href="contacts.html">О заводе и контакты</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Контакты завода</h3>
+            <ul class="footer__links">
+              <li>г. Минск, ул. Приборостроительная, 18</li>
+              <li>Отдел сбыта: +375 (17) 200-45-80</li>
+              <li>E-mail: info@aurumcraft.by</li>
+              <li>Пн–Пт: 08:30 – 17:30</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© 2026 ОАО «АурумКрафт». Все права защищены.</span>
+          <span>Курсовой проект · Клиентская часть веб-ресурса</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

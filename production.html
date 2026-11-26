@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Производство и технологии — AurumCraft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo" aria-label="AurumCraft — На главную">
+          <span class="logo__emblem">
+            <svg
+              class="js-clock"
+              data-center="32 34"
+              viewBox="0 0 64 64"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <clipPath id="dialClip">
+                  <circle cx="32" cy="34" r="21.5" />
+                </clipPath>
+                <linearGradient
+                  id="dialShineGrad"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#E2C27D" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#FFF4CC" stop-opacity="0.72" />
+                  <stop offset="100%" stop-color="#E2C27D" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                class="svg-bezel"
+                d="M23 14.1 L24.5 9.5 L26.2 9.5 L25.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 14.1 L39.5 9.5 L37.8 9.5 L38.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M23 53.9 L24.5 58.5 L26.2 58.5 L25.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 53.9 L39.5 58.5 L37.8 58.5 L38.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <polygon
+                class="svg-bezel"
+                points="29.5,6.8 34.5,6.8 35.4,9.2 28.6,9.2"
+                stroke="#B89550"
+                stroke-width="1"
+                fill="#FBF9F6"
+                stroke-linejoin="round"
+              />
+              <line
+                class="svg-bezel"
+                x1="32"
+                y1="9.2"
+                x2="32"
+                y2="12"
+                stroke="#B89550"
+                stroke-width="1"
+              />
+              <circle
+                class="svg-bezel"
+                cx="32"
+                cy="34"
+                r="22"
+                fill="#FBF9F6"
+                stroke="#B89550"
+                stroke-width="1.2"
+              />
+              <circle
+                cx="32"
+                cy="34"
+                r="19.5"
+                stroke="#B89550"
+                stroke-width="0.5"
+                opacity="0.7"
+              />
+              <line
+                x1="32"
+                y1="15"
+                x2="32"
+                y2="18.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="51"
+                y1="34"
+                x2="47.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="32"
+                y1="53"
+                x2="32"
+                y2="49.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="13"
+                y1="34"
+                x2="16.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <circle cx="40.5" cy="19.3" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="40.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="19.3" r="0.65" fill="#B89550" />
+              <rect
+                class="svg-dial-shine"
+                x="0"
+                y="10"
+                width="28"
+                height="48"
+                fill="url(#dialShineGrad)"
+                clip-path="url(#dialClip)"
+              />
+              <path
+                class="svg-hand-hour js-hand-hour"
+                d="M32 34 L30.7 27.5 L32 21.5 L33.3 27.5 Z"
+                fill="#5E1D29"
+              />
+              <path
+                class="svg-hand-minute js-hand-minute"
+                d="M32 34 L31.0 24.5 L32 15.5 L33.0 24.5 Z"
+                fill="#5E1D29"
+              />
+              <line
+                class="svg-hand-second js-hand-second"
+                x1="32"
+                y1="39"
+                x2="32"
+                y2="14.5"
+                stroke="#B89550"
+                stroke-width="0.95"
+                stroke-linecap="round"
+              />
+              <circle cx="32" cy="34" r="1.7" fill="#B89550" />
+              <circle cx="32" cy="34" r="0.65" fill="#5E1D29" />
+            </svg>
+          </span>
+          <span class="logo__name">AurumCraft</span>
+        </a>
+
+        <nav class="nav" id="mainNav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+            <li>
+              <a href="production.html" class="nav__link nav__link--active"
+                >Производство</a
+              >
+            </li>
+            <li>
+              <a href="corporate.html" class="nav__link"
+                >Корпоративным клиентам</a
+              >
+            </li>
+            <li>
+              <a href="contacts.html" class="nav__link">О заводе и контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a
+            href="catalog.html#favorites"
+            class="fav-badge"
+            title="Избранные модели"
+          >
+            <span>Избранное</span>
+            <span class="fav-badge__count" id="favCount">0</span>
+          </a>
+          <button
+            class="burger"
+            id="burgerBtn"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container" data-aos="fade-up">
+          <span class="page-hero__eyebrow">Технологическая база завода</span>
+          <h1 class="page-hero__title">Производство полного цикла</h1>
+          <p class="page-hero__desc">
+            От литья благородных сплавов и 5-осевой обработки корпусов до ручной
+            регулировки калибров и 12-суточных испытаний.
+          </p>
+        </div>
+      </section>
+
+      <!-- 1. Интерактивная SVG-схема производственного цикла -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Интерактивная схема</span>
+            <h2 class="section-header__title">Пять этапов рождения часов</h2>
+            <p class="section-header__desc">
+              Нажмите на любой этап векторной схемы, чтобы изучить технологию и
+              допуски цеха.
+            </p>
+          </div>
+
+          <div class="svg-scheme-box" data-aos="fade-up" data-aos-delay="100">
+            <svg
+              class="svg-scheme-box__svg"
+              viewBox="0 0 900 150"
+              fill="none"
+              aria-label="Схема этапов производства"
+            >
+              <!-- Соединительная золотая линия -->
+              <line
+                x1="90"
+                y1="60"
+                x2="810"
+                y2="60"
+                stroke="#B89550"
+                stroke-width="2"
+                stroke-dasharray="6 5"
+              />
+
+              <g
+                class="stage-node is-active"
+                data-stage="1"
+                tabindex="0"
+                role="button"
+              >
+                <circle class="stage-node__circle" cx="90" cy="60" r="34" />
+                <text
+                  class="stage-node__num"
+                  x="90"
+                  y="67"
+                  text-anchor="middle"
+                >
+                  01
+                </text>
+                <text
+                  class="stage-node__label"
+                  x="90"
+                  y="118"
+                  text-anchor="middle"
+                >
+                  Плавка сплавов
+                </text>
+              </g>
+
+              <g class="stage-node" data-stage="2" tabindex="0" role="button">
+                <circle class="stage-node__circle" cx="270" cy="60" r="34" />
+                <text
+                  class="stage-node__num"
+                  x="270"
+                  y="67"
+                  text-anchor="middle"
+                >
+                  02
+                </text>
+                <text
+                  class="stage-node__label"
+                  x="270"
+                  y="118"
+                  text-anchor="middle"
+                >
+                  ЧПУ-обработка
+                </text>
+              </g>
+
+              <g class="stage-node" data-stage="3" tabindex="0" role="button">
+                <circle class="stage-node__circle" cx="450" cy="60" r="34" />
+                <text
+                  class="stage-node__num"
+                  x="450"
+                  y="67"
+                  text-anchor="middle"
+                >
+                  03
+                </text>
+                <text
+                  class="stage-node__label"
+                  x="450"
+                  y="118"
+                  text-anchor="middle"
+                >
+                  Ювелирный декор
+                </text>
+              </g>
+
+              <g class="stage-node" data-stage="4" tabindex="0" role="button">
+                <circle class="stage-node__circle" cx="630" cy="60" r="34" />
+                <text
+                  class="stage-node__num"
+                  x="630"
+                  y="67"
+                  text-anchor="middle"
+                >
+                  04
+                </text>
+                <text
+                  class="stage-node__label"
+                  x="630"
+                  y="118"
+                  text-anchor="middle"
+                >
+                  Сборка калибра
+                </text>
+              </g>
+
+              <g class="stage-node" data-stage="5" tabindex="0" role="button">
+                <circle class="stage-node__circle" cx="810" cy="60" r="34" />
+                <text
+                  class="stage-node__num"
+                  x="810"
+                  y="67"
+                  text-anchor="middle"
+                >
+                  05
+                </text>
+                <text
+                  class="stage-node__label"
+                  x="810"
+                  y="118"
+                  text-anchor="middle"
+                >
+                  Контроль 12 суток
+                </text>
+              </g>
+            </svg>
+
+            <div class="stage-detail" id="stageDetail">
+              <span class="stage-detail__step" id="stageStep"
+                >Этап 01 · Заготовительный цикл</span
+              >
+              <h3 class="stage-detail__title" id="stageTitle">
+                Плавка и пробирный контроль сплавов
+              </h3>
+              <p class="stage-detail__text" id="stageText">
+                Индукционная плавка золота 585 и 750 пробы, титана Grade 5 и
+                нержавеющей стали 316L в защитной аргоновой среде с последующим
+                спектральным анализом однородности металла.
+              </p>
+              <div class="stage-detail__spec" id="stageSpec">
+                Оборудование: вакуумные индукционные печи · Допуск чистоты:
+                99,95 %
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Основные цеха -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Структура предприятия</span>
+            <h2 class="section-header__title">
+              Производственные подразделения
+            </h2>
+          </div>
+
+          <div class="workshops-grid">
+            <article
+              class="workshop-card"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="workshop-card__head">
+                <div class="workshop-card__badge">I</div>
+                <h3 class="workshop-card__title">
+                  Цех прецизионной механообработки
+                </h3>
+              </div>
+              <p class="workshop-card__text">
+                Автоматы продольного точения изготавливают миниатюрные оси,
+                трибы, шестерни, мосты и корпуса часов с точностью до 2
+                микрометров.
+              </p>
+            </article>
+
+            <article
+              class="workshop-card"
+              data-aos="fade-up"
+              data-aos-delay="120"
+            >
+              <div class="workshop-card__head">
+                <div class="workshop-card__badge">II</div>
+                <h3 class="workshop-card__title">
+                  Ювелирно-гальванический цех
+                </h3>
+              </div>
+              <p class="workshop-card__text">
+                Участок вакуумного напыления (PVD), художественного литья по
+                выплавляемым моделям, горячей эмали и микрозакрепки драгоценных
+                камней.
+              </p>
+            </article>
+
+            <article
+              class="workshop-card"
+              data-aos="fade-up"
+              data-aos-delay="190"
+            >
+              <div class="workshop-card__head">
+                <div class="workshop-card__badge">III</div>
+                <h3 class="workshop-card__title">Сборочное производство</h3>
+              </div>
+              <p class="workshop-card__text">
+                Чистые помещения с климат-контролем, где мастера собирают
+                механические и кварцевые калибры, выполняют балансировку спирали
+                и установку стрелок.
+              </p>
+            </article>
+
+            <article
+              class="workshop-card"
+              data-aos="fade-up"
+              data-aos-delay="260"
+            >
+              <div class="workshop-card__head">
+                <div class="workshop-card__badge">IV</div>
+                <h3 class="workshop-card__title">
+                  Метрологическая лаборатория ОТК
+                </h3>
+              </div>
+              <p class="workshop-card__text">
+                Испытание герметичности в водяной и воздушной барокамерах,
+                проверка антимагнитной защиты и контроль суточной точности хода.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Таблица сплавов и стандартов -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Материаловедение</span>
+            <h2 class="section-header__title">
+              Применяемые сплавы и стандарты качества
+            </h2>
+          </div>
+
+          <div class="table-scroll" data-aos="fade-up">
+            <table class="alloy-table">
+              <thead>
+                <tr>
+                  <th>Материал / сплав</th>
+                  <th>Проба / марка</th>
+                  <th>Ключевые свойства</th>
+                  <th>Нормативный стандарт</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ювелирное золото</td>
+                  <td>585 / 750 проба</td>
+                  <td>Высокая коррозионная стойкость, благородный блеск</td>
+                  <td>ГОСТ 30649-99 · Пробирное клеймо</td>
+                </tr>
+                <tr>
+                  <td>Медицинский титан</td>
+                  <td>Grade 5 (Ti-6Al-4V)</td>
+                  <td>
+                    Сверхлёгкость (на 45 % легче стали), гипоаллергенность
+                  </td>
+                  <td>ISO 5832-3 · Антимагнитный</td>
+                </tr>
+                <tr>
+                  <td>Часовая сталь</td>
+                  <td>AISI 316L</td>
+                  <td>
+                    Устойчивость к морской воде, высокая прочность корпуса
+                  </td>
+                  <td>ISO 3159 · Водозащита до 10 ATM</td>
+                </tr>
+                <tr>
+                  <td>Стерлинговое серебро</td>
+                  <td>925 проба + родий</td>
+                  <td>Защита от потемнения, зеркальная полировка</td>
+                  <td>ГОСТ 30649-99 · Родирование</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <div class="footer__brand">AurumCraft</div>
+            <p class="footer__desc">
+              ОАО «АурумКрафт» — промышленное ювелирно-часовое предприятие
+              полного цикла. Точность механизмов и благородство драгоценных
+              сплавов.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Разделы</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог продукции</a></li>
+              <li><a href="production.html">Производство и технологии</a></li>
+              <li><a href="corporate.html">Корпоративным клиентам</a></li>
+              <li><a href="contacts.html">О заводе и контакты</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Контакты завода</h3>
+            <ul class="footer__links">
+              <li>г. Минск, ул. Приборостроительная, 18</li>
+              <li>Отдел сбыта: +375 (17) 200-45-80</li>
+              <li>E-mail: info@aurumcraft.by</li>
+              <li>Пн–Пт: 08:30 – 17:30</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© 2026 ОАО «АурумКрафт». Все права защищены.</span>
+          <span>Курсовой проект · Клиентская часть веб-ресурса</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

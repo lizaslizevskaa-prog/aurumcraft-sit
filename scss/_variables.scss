@@ -1,0 +1,35 @@
+// Цветовая палитра «Винный бархат и слоновая кость»
+$color-bg-primary: #fbf9f6; // Основной фон (фарфор / слоновая кость)
+$color-bg-secondary: #f2ece6; // Карточки и второстепенные блоки
+$color-accent-wine: #5e1d29; // Главный акцент (винный бархат)
+$color-accent-wine-hover: #46131d; // Винный при наведении
+$color-accent-gold: #b89550; // Античное золото (рамки, детали SVG)
+$color-accent-gold-light: #e2c27d; // Яркое золото (для свечения при наведении)
+$color-text-main: #23191c; // Основной тёмный текст
+$color-text-muted: #6d5f63; // Вторичный текст (подписи, артикулы)
+$color-white: #ffffff;
+$color-border: #e4dad0;
+
+// Шрифты (утончённая роскошь)
+$font-calligraphic: "Pinyon Script", cursive; // Название AurumCraft
+$font-heading: "Cormorant Garamond", Georgia, serif; // Заголовки и модели
+$font-body:
+  "Montserrat",
+  -apple-system,
+  BlinkMacSystemFont,
+  sans-serif; // Текст и меню
+
+// Размеры и отступы
+$container-width: 1240px;
+$radius-sm: 4px;
+$radius-md: 10px;
+$radius-lg: 18px;
+
+// Тени и плавность
+$shadow-soft: 0 10px 30px rgba(35, 25, 28, 0.05);
+$shadow-card-hover: 0 16px 36px rgba(94, 29, 41, 0.12);
+$transition-base: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+// Точки адаптивности (Breakpoints)
+$bp-tablet: 992px;
+$bp-mobile: 576px;

@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корпоративным клиентам — AurumCraft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo" aria-label="AurumCraft — На главную">
+          <span class="logo__emblem">
+            <svg
+              class="js-clock"
+              data-center="32 34"
+              viewBox="0 0 64 64"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <clipPath id="dialClip">
+                  <circle cx="32" cy="34" r="21.5" />
+                </clipPath>
+                <linearGradient
+                  id="dialShineGrad"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#E2C27D" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#FFF4CC" stop-opacity="0.72" />
+                  <stop offset="100%" stop-color="#E2C27D" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                class="svg-bezel"
+                d="M23 14.1 L24.5 9.5 L26.2 9.5 L25.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 14.1 L39.5 9.5 L37.8 9.5 L38.5 13.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M23 53.9 L24.5 58.5 L26.2 58.5 L25.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="svg-bezel"
+                d="M41 53.9 L39.5 58.5 L37.8 58.5 L38.5 55.0"
+                stroke="#B89550"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <polygon
+                class="svg-bezel"
+                points="29.5,6.8 34.5,6.8 35.4,9.2 28.6,9.2"
+                stroke="#B89550"
+                stroke-width="1"
+                fill="#FBF9F6"
+                stroke-linejoin="round"
+              />
+              <line
+                class="svg-bezel"
+                x1="32"
+                y1="9.2"
+                x2="32"
+                y2="12"
+                stroke="#B89550"
+                stroke-width="1"
+              />
+              <circle
+                class="svg-bezel"
+                cx="32"
+                cy="34"
+                r="22"
+                fill="#FBF9F6"
+                stroke="#B89550"
+                stroke-width="1.2"
+              />
+              <circle
+                cx="32"
+                cy="34"
+                r="19.5"
+                stroke="#B89550"
+                stroke-width="0.5"
+                opacity="0.7"
+              />
+              <line
+                x1="32"
+                y1="15"
+                x2="32"
+                y2="18.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="51"
+                y1="34"
+                x2="47.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="32"
+                y1="53"
+                x2="32"
+                y2="49.5"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <line
+                x1="13"
+                y1="34"
+                x2="16.5"
+                y2="34"
+                stroke="#5E1D29"
+                stroke-width="1.15"
+                stroke-linecap="round"
+              />
+              <circle cx="40.5" cy="19.3" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="46.7" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="40.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="48.7" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="42.5" r="0.65" fill="#B89550" />
+              <circle cx="17.3" cy="25.5" r="0.65" fill="#B89550" />
+              <circle cx="23.5" cy="19.3" r="0.65" fill="#B89550" />
+              <rect
+                class="svg-dial-shine"
+                x="0"
+                y="10"
+                width="28"
+                height="48"
+                fill="url(#dialShineGrad)"
+                clip-path="url(#dialClip)"
+              />
+              <path
+                class="svg-hand-hour js-hand-hour"
+                d="M32 34 L30.7 27.5 L32 21.5 L33.3 27.5 Z"
+                fill="#5E1D29"
+              />
+              <path
+                class="svg-hand-minute js-hand-minute"
+                d="M32 34 L31.0 24.5 L32 15.5 L33.0 24.5 Z"
+                fill="#5E1D29"
+              />
+              <line
+                class="svg-hand-second js-hand-second"
+                x1="32"
+                y1="39"
+                x2="32"
+                y2="14.5"
+                stroke="#B89550"
+                stroke-width="0.95"
+                stroke-linecap="round"
+              />
+              <circle cx="32" cy="34" r="1.7" fill="#B89550" />
+              <circle cx="32" cy="34" r="0.65" fill="#5E1D29" />
+            </svg>
+          </span>
+          <span class="logo__name">AurumCraft</span>
+        </a>
+
+        <nav class="nav" id="mainNav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+            <li>
+              <a href="production.html" class="nav__link">Производство</a>
+            </li>
+            <li>
+              <a href="corporate.html" class="nav__link nav__link--active"
+                >Корпоративным клиентам</a
+              >
+            </li>
+            <li>
+              <a href="contacts.html" class="nav__link">О заводе и контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a
+            href="catalog.html#favorites"
+            class="fav-badge"
+            title="Избранные модели"
+          >
+            <span>Избранное</span>
+            <span class="fav-badge__count" id="favCount">0</span>
+          </a>
+          <button
+            class="burger"
+            id="burgerBtn"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container" data-aos="fade-up">
+          <span class="page-hero__eyebrow"
+            >B2B-партнёрство и лимитированные партии</span
+          >
+          <h1 class="page-hero__title">Корпоративным клиентам</h1>
+          <p class="page-hero__desc">
+            Изготовление наградных, юбилейных и подарочных серий часов с
+            фирменной символикой вашего предприятия от 20 экземпляров.
+          </p>
+        </div>
+      </section>
+
+      <!-- 1. Технологии брендирования -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Персонализация</span>
+            <h2 class="section-header__title">Способы нанесения символики</h2>
+          </div>
+
+          <div class="directions__grid">
+            <article class="dir-card" data-aos="fade-up" data-aos-delay="50">
+              <svg
+                class="dir-card__icon"
+                viewBox="0 0 52 52"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="19"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M18 30 L26 16 L34 30 Z"
+                  stroke="#5E1D29"
+                  stroke-width="1.5"
+                  fill="rgba(94,29,41,0.1)"
+                />
+              </svg>
+              <h3 class="dir-card__title">Тампопечать на циферблате</h3>
+              <p class="dir-card__text">
+                Многоцветное нанесение логотипа и девиза компании на циферблат
+                при помощи высокоточного металлического клише.
+              </p>
+            </article>
+
+            <article class="dir-card" data-aos="fade-up" data-aos-delay="140">
+              <svg
+                class="dir-card__icon"
+                viewBox="0 0 52 52"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="19"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="15"
+                  y1="22"
+                  x2="37"
+                  y2="22"
+                  stroke="#5E1D29"
+                  stroke-width="1.4"
+                />
+                <line
+                  x1="18"
+                  y1="28"
+                  x2="34"
+                  y2="28"
+                  stroke="#5E1D29"
+                  stroke-width="1.4"
+                />
+                <line
+                  x1="21"
+                  y1="34"
+                  x2="31"
+                  y2="34"
+                  stroke="#B89550"
+                  stroke-width="1.4"
+                />
+              </svg>
+              <h3 class="dir-card__title">Лазерная гравировка крышки</h3>
+              <p class="workshop-card__text">
+                Нестираемое нанесение памятных дат, дарственных надписей,
+                фамилий сотрудников и индивидуальных серийных номеров.
+              </p>
+            </article>
+
+            <article class="dir-card" data-aos="fade-up" data-aos-delay="230">
+              <svg
+                class="dir-card__icon"
+                viewBox="0 0 52 52"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="10"
+                  y="14"
+                  width="32"
+                  height="24"
+                  rx="4"
+                  stroke="#B89550"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="6"
+                  stroke="#5E1D29"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <h3 class="dir-card__title">Фирменная упаковка</h3>
+              <p class="dir-card__text">
+                Изготовление шкатулок из дерева и винного бархата с золотым
+                тиснением герба заказчика и вложением паспорта серии.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Интерактивный JS-калькулятор -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-header__subtitle">Онлайн-оценка</span>
+            <h2 class="section-header__title">
+              Калькулятор корпоративной партии
+            </h2>
+            <p class="section-header__desc">
+              Выберите базовую платформу, объём тиража и виды персонализации для
+              мгновенного расчёта.
+            </p>
+          </div>
+
+          <div class="calc-layout" data-aos="fade-up" data-aos-delay="100">
+            <form class="calc-form" id="corporateCalc">
+              <div class="calc-form__group">
+                <label class="calc-form__label" for="calcModel"
+                  >Базовая модель / калибр</label
+                >
+                <select class="form-control" id="calcModel">
+                  <option value="890">
+                    Сонет Кварц (сталь 316L, сапфир) — от 890 BYN
+                  </option>
+                  <option value="1350">
+                    Минск-80 Автомат (титан, автоподзавод) — от 1 350 BYN
+                  </option>
+                  <option value="2200">
+                    Velvet Manufacture (скелетон, сталь 316L) — от 2 200 BYN
+                  </option>
+                  <option value="4400">
+                    Aurum Classic 1981 (золото 585, механика) — от 4 400 BYN
+                  </option>
+                </select>
+              </div>
+
+              <div class="calc-form__group">
+                <label class="calc-form__label" for="qtyInput"
+                  >Тираж партии (от 20 до 500 экземпляров)</label
+                >
+                <div class="calc-form__range-row">
+                  <input
+                    type="range"
+                    id="qtyRange"
+                    class="calc-form__range"
+                    min="20"
+                    max="500"
+                    step="10"
+                    value="50"
+                    aria-label="Ползунок тиража"
+                  />
+                  <input
+                    type="number"
+                    id="qtyInput"
+                    class="form-control calc-form__qty"
+                    min="20"
+                    max="500"
+                    value="50"
+                  />
+                </div>
+              </div>
+
+              <div class="calc-form__group" style="margin-bottom: 0">
+                <span class="calc-form__label"
+                  >Дополнительная персонализация и упаковка</span
+                >
+                <div class="calc-form__checks">
+                  <label class="check-option">
+                    <span class="check-option__left">
+                      <input type="checkbox" id="optEngraving" checked />
+                      <span>Лазерная гравировка задней крышки</span>
+                    </span>
+                    <span class="check-option__plus">+35 BYN / шт.</span>
+                  </label>
+
+                  <label class="check-option">
+                    <span class="check-option__left">
+                      <input type="checkbox" id="optPadPrint" />
+                      <span>Тампопечать логотипа на циферблате</span>
+                    </span>
+                    <span class="check-option__plus">+45 BYN / шт.</span>
+                  </label>
+
+                  <label class="check-option">
+                    <span class="check-option__left">
+                      <input type="checkbox" id="optBox" />
+                      <span>Бархатный футляр с тиснением</span>
+                    </span>
+                    <span class="check-option__plus">+60 BYN / шт.</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+
+            <aside class="calc-summary">
+              <h3 class="calc-summary__title">Параметры партии</h3>
+              <div class="calc-summary__row">
+                <span>Объём тиража</span>
+                <strong id="resQty">50 шт.</strong>
+              </div>
+              <div class="calc-summary__row">
+                <span>Оптовая скидка</span>
+                <strong id="resDiscount">5%</strong>
+              </div>
+              <div class="calc-summary__row">
+                <span>Стоимость за 1 единицу</span>
+                <strong id="resUnitPrice">925 BYN</strong>
+              </div>
+              <div class="calc-summary__row">
+                <span>Ориентировочный срок</span>
+                <strong id="resDays">16 раб. дней</strong>
+              </div>
+
+              <div class="calc-summary__total">
+                <span>Итого ориентировочно</span>
+                <strong id="resTotal">46 250 BYN</strong>
+              </div>
+
+              <button
+                type="button"
+                id="applyCalcBtn"
+                class="btn calc-summary__btn"
+              >
+                Передать расчёт в заявку →
+              </button>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <div class="footer__brand">AurumCraft</div>
+            <p class="footer__desc">
+              ОАО «АурумКрафт» — промышленное ювелирно-часовое предприятие
+              полного цикла. Точность механизмов и благородство драгоценных
+              сплавов.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Разделы</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог продукции</a></li>
+              <li><a href="production.html">Производство и технологии</a></li>
+              <li><a href="corporate.html">Корпоративным клиентам</a></li>
+              <li><a href="contacts.html">О заводе и контакты</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Контакты завода</h3>
+            <ul class="footer__links">
+              <li>г. Минск, ул. Приборостроительная, 18</li>
+              <li>Отдел сбыта: +375 (17) 200-45-80</li>
+              <li>E-mail: info@aurumcraft.by</li>
+              <li>Пн–Пт: 08:30 – 17:30</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© 2026 ОАО «АурумКрафт». Все права защищены.</span>
+          <span>Курсовой проект · Клиентская часть веб-ресурса</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>

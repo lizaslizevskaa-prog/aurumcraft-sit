@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+// Адаптивность под планшеты
+@mixin tablet {
+  @media (max-width: $bp-tablet) {
+    @content;
+  }
+}
+
+// Адаптивность под смартфоны
+@mixin mobile {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+// Центрирование через Flexbox
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Золотое свечение (для логотипа, стрелок и каллиграфического названия)
+@mixin gold-glow {
+  filter: drop-shadow(0 0 8px rgba(226, 194, 125, 0.85));
+}

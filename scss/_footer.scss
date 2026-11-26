@@ -1,0 +1,71 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.footer {
+  background-color: $color-accent-wine;
+  color: $color-bg-primary;
+  padding: 56px 0 28px;
+  border-top: 2px solid $color-accent-gold;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(226, 194, 125, 0.25);
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+  }
+
+  &__brand {
+    font-family: $font-calligraphic;
+    font-size: 2.2rem;
+    color: $color-accent-gold-light;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-size: 0.9rem;
+    color: rgba(251, 249, 246, 0.8);
+    max-width: 340px;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 1.3rem;
+    color: $color-accent-gold-light;
+    margin-bottom: 14px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 0.88rem;
+    color: rgba(251, 249, 246, 0.85);
+
+    a:hover {
+      color: $color-accent-gold-light;
+      padding-left: 4px;
+    }
+  }
+
+  &__bottom {
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: rgba(251, 249, 246, 0.65);
+  }
+}

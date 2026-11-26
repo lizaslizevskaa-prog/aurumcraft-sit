@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Изящные ушки крепления корпуса -->
+  <path
+    d="M23 14.1 L24.5 9.5 L26.2 9.5 L25.5 13.0"
+    stroke="#B89550"
+    stroke-width="0.95"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M41 14.1 L39.5 9.5 L37.8 9.5 L38.5 13.0"
+    stroke="#B89550"
+    stroke-width="0.95"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M23 53.9 L24.5 58.5 L26.2 58.5 L25.5 55.0"
+    stroke="#B89550"
+    stroke-width="0.95"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M41 53.9 L39.5 58.5 L37.8 58.5 L38.5 55.0"
+    stroke="#B89550"
+    stroke-width="0.95"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Ювелирная гранёная коронка сверху -->
+  <polygon
+    points="29.5,6.8 34.5,6.8 35.4,9.2 28.6,9.2"
+    stroke="#B89550"
+    stroke-width="0.95"
+    fill="#FBF9F6"
+    stroke-linejoin="round"
+  />
+  <line x1="32" y1="9.2" x2="32" y2="12" stroke="#B89550" stroke-width="0.95" />
+
+  <!-- Воздушный тонкий корпус часов -->
+  <circle
+    cx="32"
+    cy="34"
+    r="22"
+    fill="#FBF9F6"
+    stroke="#B89550"
+    stroke-width="1.05"
+  />
+  <circle
+    cx="32"
+    cy="34"
+    r="19.5"
+    stroke="#B89550"
+    stroke-width="0.45"
+    opacity="0.7"
+  />
+  <circle
+    cx="32"
+    cy="34"
+    r="11.5"
+    stroke="#B89550"
+    stroke-width="0.35"
+    stroke-dasharray="1.2 1.8"
+    opacity="0.55"
+  />
+
+  <!-- Основные риски (12, 3, 6, 9) -->
+  <line
+    x1="32"
+    y1="15.5"
+    x2="32"
+    y2="18.5"
+    stroke="#5E1D29"
+    stroke-width="0.9"
+    stroke-linecap="round"
+  />
+  <line
+    x1="50.5"
+    y1="34"
+    x2="47.5"
+    y2="34"
+    stroke="#5E1D29"
+    stroke-width="0.9"
+    stroke-linecap="round"
+  />
+  <line
+    x1="32"
+    y1="52.5"
+    x2="32"
+    y2="49.5"
+    stroke="#5E1D29"
+    stroke-width="0.9"
+    stroke-linecap="round"
+  />
+  <line
+    x1="13.5"
+    y1="34"
+    x2="16.5"
+    y2="34"
+    stroke="#5E1D29"
+    stroke-width="0.9"
+    stroke-linecap="round"
+  />
+
+  <!-- Миниатюрные золотые точки часов -->
+  <circle cx="40.5" cy="19.3" r="0.55" fill="#B89550" />
+  <circle cx="46.7" cy="25.5" r="0.55" fill="#B89550" />
+  <circle cx="46.7" cy="42.5" r="0.55" fill="#B89550" />
+  <circle cx="40.5" cy="48.7" r="0.55" fill="#B89550" />
+  <circle cx="23.5" cy="48.7" r="0.55" fill="#B89550" />
+  <circle cx="17.3" cy="42.5" r="0.55" fill="#B89550" />
+  <circle cx="17.3" cy="25.5" r="0.55" fill="#B89550" />
+  <circle cx="23.5" cy="19.3" r="0.55" fill="#B89550" />
+
+  <!-- Ювелирный 4-лучевой блик в центре -->
+  <path
+    d="M32 29.5 L32.8 33.2 L36.5 34 L32.8 34.8 L32 38.5 L31.2 34.8 L27.5 34 L31.2 33.2 Z"
+    stroke="#B89550"
+    stroke-width="0.55"
+    fill="rgba(184,149,80,0.14)"
+  />
+
+  <!-- Стрелки (в коде HTML/JS они будут идти по реальному времени) -->
+  <path
+    d="M32 34 L31.15 28 L32 22.5 L32.85 28 Z"
+    fill="#5E1D29"
+    transform="rotate(-55 32 34)"
+  />
+  <path
+    d="M32 34 L31.4 25 L32 16.5 L32.6 25 Z"
+    fill="#5E1D29"
+    transform="rotate(60 32 34)"
+  />
+  <line
+    x1="32"
+    y1="38.5"
+    x2="32"
+    y2="15.5"
+    stroke="#B89550"
+    stroke-width="0.65"
+    stroke-linecap="round"
+    transform="rotate(140 32 34)"
+  />
+
+  <!-- Центральный камень -->
+  <circle cx="32" cy="34" r="1.4" fill="#B89550" />
+  <circle cx="32" cy="34" r="0.55" fill="#5E1D29" />
+</svg>

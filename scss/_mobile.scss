@@ -1,0 +1,207 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Все стили ниже срабатывают ТОЛЬКО на телефонах (ширина экрана до 576px).
+// На ноутбуке и компьютере дизайн остаётся абсолютно без изменений.
+@include mobile {
+  // Компактная шапка и полноэкранное мобильное меню
+  .header__inner {
+    padding: 6px 0;
+    gap: 10px;
+  }
+
+  .logo {
+    padding: 2px 4px;
+
+    &__emblem {
+      width: 44px;
+      height: 44px;
+    }
+
+    &__name {
+      font-size: 1.4rem;
+      padding: 0 4px;
+    }
+  }
+
+  .fav-badge {
+    padding: 6px 11px;
+    font-size: 0.76rem;
+  }
+
+  .nav {
+    top: 84px;
+    width: 100%;
+    height: calc(100vh - 84px);
+    border-left: none;
+    padding: 28px 24px;
+  }
+
+  // Первый экран на телефоне
+  .hero {
+    padding: 26px 0 48px;
+
+    &__eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+    }
+
+    &__subtitle {
+      font-size: 0.94rem;
+      margin-bottom: 24px;
+    }
+
+    &__actions {
+      flex-direction: column;
+      gap: 12px;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .hero-clock {
+    width: min(310px, 86vw);
+    height: min(310px, 86vw);
+  }
+
+  // Аккуратная сетка статистики 2×2 вместо длинной ленты
+  .stats {
+    padding: 36px 0;
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 14px;
+    }
+
+    &__label {
+      font-size: 0.78rem;
+    }
+  }
+
+  // Карточки и слайдер
+  .directions__grid {
+    gap: 18px;
+  }
+
+  .dir-card {
+    padding: 24px 18px;
+  }
+
+  .collections-swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 34px;
+      height: 34px;
+      top: 122px;
+
+      &::after {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .slide-card {
+    padding: 18px;
+
+    &__preview {
+      height: 200px;
+    }
+  }
+
+  .cta-banner {
+    padding: 30px 18px;
+    gap: 18px;
+
+    .btn--gold {
+      width: 100%;
+    }
+  }
+
+  // Внутренние страницы и каталог
+  .page-hero {
+    padding: 32px 0 26px;
+
+    &__desc {
+      font-size: 0.9rem;
+    }
+  }
+
+  .catalog-controls {
+    padding: 16px;
+    margin-bottom: 22px;
+  }
+
+  .filter-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .filter-tab {
+    padding: 9px 8px;
+    font-size: 0.78rem;
+    text-align: center;
+  }
+
+  .product-card {
+    padding: 16px;
+
+    &__visual {
+      height: 205px;
+    }
+
+    &__badge {
+      top: 24px;
+      left: 24px;
+    }
+
+    &__fav {
+      top: 22px;
+      right: 22px;
+    }
+  }
+
+  // Страница «Производство»: удобный свайп SVG-схемы на телефоне
+  .svg-scheme-box {
+    padding: 20px 14px;
+    overflow-x: auto;
+
+    &__svg {
+      min-width: 580px;
+    }
+  }
+
+  .stage-detail {
+    position: sticky;
+    left: 0;
+    padding: 18px 16px;
+  }
+
+  // Калькулятор и контакты
+  .calc-summary {
+    padding: 24px 18px;
+
+    &__total strong {
+      font-size: 1.9rem;
+    }
+  }
+
+  .contact-info-card {
+    padding: 22px 18px;
+  }
+
+  .map-svg-card {
+    padding: 14px;
+  }
+
+  .footer {
+    padding: 40px 0 24px;
+
+    &__bottom {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

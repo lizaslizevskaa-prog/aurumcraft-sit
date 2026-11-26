@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <product>
+    <id>1</id>
+    <article>AK-1981-01</article>
+    <name>Aurum Classic 1981</name>
+    <category>watches</category>
+    <categoryName>Наручные часы</categoryName>
+    <mechanism>Механика</mechanism>
+    <caliber>AK-2416 (24 камня, запас хода 42 ч)</caliber>
+    <material>Золото 585</material>
+    <glass>Сапфировое с антибликом</glass>
+    <waterproof>5 ATM (50 м)</waterproof>
+    <diameter>40 мм</diameter>
+    <price>4 850 BYN</price>
+    <badge>Флагман</badge>
+    <image>https://images.unsplash.com/photo-1580226223521-5412ec88237a?w=900</image>
+    <description>Флагманские механические часы в корпусе из золота 585 пробы с фарфоровым циферблатом и ручной доводкой калибра собственного производства.</description>
+  </product>
+
+  <product>
+    <id>2</id>
+    <article>AK-2026-02</article>
+    <name>Velvet Manufacture</name>
+    <category>watches</category>
+    <categoryName>Наручные часы</categoryName>
+    <mechanism>Автоподзавод</mechanism>
+    <caliber>AK-2824S (26 камней, автоподзавод)</caliber>
+    <material>Сталь 316L</material>
+    <glass>Сапфировое выпуклое</glass>
+    <waterproof>10 ATM (100 м)</waterproof>
+    <diameter>42 мм</diameter>
+    <price>2 390 BYN</price>
+    <badge>Новинка</badge>
+    <image>https://images.unsplash.com/photo-1639564879163-a2a85682410e?w=900</image>
+    <description>Мануфактурная модель в корпусе из часовой стали 316L с сатинированным циферблатом и прозрачной задней крышкой из сапфирового стекла.</description>
+  </product>
+
+  <product>
+    <id>3</id>
+    <article>AK-3104-03</article>
+    <name>Perle d'Or</name>
+    <category>watches</category>
+    <categoryName>Наручные часы</categoryName>
+    <mechanism>Кварц</mechanism>
+    <caliber>AK-Q715 (высокоточный кварц)</caliber>
+    <material>Титан</material>
+    <glass>Сапфировое</glass>
+    <waterproof>5 ATM (50 м)</waterproof>
+    <diameter>34 мм</diameter>
+    <price>1 680 BYN</price>
+    <badge>Женская серия</badge>
+    <image>https://images.unsplash.com/photo-1786052348000-58d9171b9eee?w=900</image>
+    <description>Утончённая женская модель в сверхлёгком корпусе прямоугольной геометрии с золотым PVD-покрытием и перламутровым отливом.</description>
+  </product>
+
+  <product>
+    <id>4</id>
+    <article>AK-4012-04</article>
+    <name>Chronographe Impérial</name>
+    <category>watches</category>
+    <categoryName>Наручные часы</categoryName>
+    <mechanism>Механика</mechanism>
+    <caliber>AK-3133M (ручной завод, хронограф)</caliber>
+    <material>Золото 750</material>
+    <glass>Сапфировое с двойным антибликом</glass>
+    <waterproof>5 ATM (50 м)</waterproof>
+    <diameter>41 мм</diameter>
+    <price>7 900 BYN</price>
+    <badge>Лимитированная</badge>
+    <image>https://images.unsplash.com/photo-1773755060442-6d128b70dd20?w=900</image>
+    <description>Ювелирно-часовой хронограф ограниченного тиража с высокой точностью считывания интервалов и полированными элементами корпуса.</description>
+  </product>
+
+  <product>
+    <id>5</id>
+    <article>AK-5208-05</article>
+    <name>Минск-80 Автомат</name>
+    <category>watches</category>
+    <categoryName>Наручные часы</categoryName>
+    <mechanism>Автоподзавод</mechanism>
+    <caliber>AK-2416 (24 камня)</caliber>
+    <material>Титан</material>
+    <glass>Минеральное закалённое</glass>
+    <waterproof>10 ATM (100 м)</waterproof>
+    <diameter>41 мм</diameter>
+    <price>1 450 BYN</price>
+    <badge>Хит</badge>
+    <image>https://images.unsplash.com/photo-1534277448999-989742a033af?w=900</image>
+    <description>Надёжные повседневные часы с лёгким антимагнитным корпусом и классическим металлическим браслетом.</description>
+  </product>
+
+  <product>
+    <id>6</id>
+    <article>AK-6090-06</article>
+    <name>Сонет Кварц</name>
+    <category>watches</category>
+    <categoryName>Наручные часы</categoryName>
+    <mechanism>Кварц</mechanism>
+    <caliber>AK-Q502 (сверхтонкий 5,8 мм)</caliber>
+    <material>Сталь 316L</material>
+    <glass>Сапфировое</glass>
+    <waterproof>3 ATM (30 м)</waterproof>
+    <diameter>36 мм</diameter>
+    <price>980 BYN</price>
+    <badge>Ультратонкие</badge>
+    <image>https://images.unsplash.com/photo-1507975456351-a41d6828b9c8?w=900</image>
+    <description>Лаконичные костюмные часы ультратонкого профиля со стальным корпусом, чистым циферблатом и кожаным ремешком.</description>
+  </product>
+
+  <product>
+    <id>7</id>
+    <article>JW-7001-07</article>
+    <name>Кольцо «Грань Наследия»</name>
+    <category>jewelry</category>
+    <categoryName>Ювелирные изделия</categoryName>
+    <mechanism>Без механизма</mechanism>
+    <caliber>Алмазная грань, текстурный профиль</caliber>
+    <material>Золото 585</material>
+    <glass>Без вставок / полированная грань</glass>
+    <waterproof>Проба 585 (клеймо пробирной инспекции)</waterproof>
+    <diameter>Вес 3,8 г</diameter>
+    <price>2 150 BYN</price>
+    <badge>Ювелирная линия</badge>
+    <image>https://images.unsplash.com/photo-1783061339627-37483d51349c?w=900</image>
+    <description>Серийное ювелирное кольцо из золота 585 пробы с прецизионной рельефной обработкой поверхности.</description>
+  </product>
+
+  <product>
+    <id>8</id>
+    <article>JW-7045-08</article>
+    <name>Подвеска «Витраж Бархата»</name>
+    <category>jewelry</category>
+    <categoryName>Ювелирные изделия</categoryName>
+    <mechanism>Без механизма</mechanism>
+    <caliber>Закрепка камней категории А</caliber>
+    <material>Золото 750</material>
+    <glass>Вставка: бриллианты 0,25 карат</glass>
+    <waterproof>Проба 750 (клеймо пробирной инспекции)</waterproof>
+    <diameter>Вес 4,4 г</diameter>
+    <price>2 840 BYN</price>
+    <badge>Эксклюзив</badge>
+    <image>https://images.unsplash.com/photo-1793054733110-b22c822e97b6?w=900</image>
+    <description>Изящное ювелирное изделие из золота 750 пробы с россыпью огранённых камней в тонкой ажурной оправе.</description>
+  </product>
+
+  <product>
+    <id>9</id>
+    <article>JW-7092-09</article>
+    <name>Колье «Шёлковая нить»</name>
+    <category>jewelry</category>
+    <categoryName>Ювелирные изделия</categoryName>
+    <mechanism>Без механизма</mechanism>
+    <caliber>Плетение «Сингапур», золочение</caliber>
+    <material>Серебро 925</material>
+    <glass>Защитное золочение 24К (Vermeil)</glass>
+    <waterproof>Проба 925 (клеймо пробирной инспекции)</waterproof>
+    <diameter>Длина 45 см · 5,2 г</diameter>
+    <price>720 BYN</price>
+    <badge>Утончённая серия</badge>
+    <image>https://images.unsplash.com/photo-1625792508553-5e66a81659fa?w=900</image>
+    <description>Воздушное колье из серебра 925 пробы с плотным гальваническим золочением и миниатюрной застёжкой-карабином.</description>
+  </product>
+</catalog>
